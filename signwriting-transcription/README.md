@@ -2,6 +2,16 @@
 
 Data includes MediaPipe poses of videos from multiple sources, transcribed using SignWriting.
 
+### Examples
+
+(These examples are taken from the DSGS Vokabeltrainer)
+
+|             |                        00004                        |                        00007                        |                        00015                        |
+|:-----------:|:---------------------------------------------------:|:---------------------------------------------------:|:---------------------------------------------------:|
+|    Video    | <img src="examples/00004.gif" width="150px"> | <img src="examples/00007.gif" width="150px"> | <img src="examples/00015.gif" width="150px"> |
+| SignWriting | <img src="examples/00004.png" width="50px">  | <img src="examples/00007.png" width="50px">  | <img src="examples/00015.png" width="50px">  |
+
+
 ### Sources
 
 - `ChicagoFSWild` - About 50,000 fingerspelled signs. Low quality transcriptions. No specific indicator, except for using only hand symbols.
