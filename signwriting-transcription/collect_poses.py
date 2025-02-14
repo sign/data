@@ -14,3 +14,5 @@ unique_poses = set(datum["pose"] for datum in data)
 with zipfile.ZipFile("/Volumes/Echo/GCS/sign-language-datasets/poses/holistic/transcription.zip", "w") as poses_zip:
     for pose_name in tqdm(unique_poses):
         poses_zip.write(poses_location / pose_name, pose_name)
+
+# rclone copyto --progress /Volumes/Echo/GCS/sign-language-datasets/poses/holistic/transcription.zip R2:sign-language-datasets/poses/holistic/transcription.zip

@@ -21,9 +21,16 @@ Data includes MediaPipe poses of videos from multiple sources, transcribed using
 - `FLEURS-ASL` - about 200, extremely high quality continuous sign language transcriptions with detailed facial expressions. pose files starts with "fasl".
 - `19097be0e2094c4aa6b2fdc208c8231e.pose` comes from [Why SignWriting?](https://www.youtube.com/watch?v=Mtl7dmyHgJU), and demonstrates transcription of continuous sign language.
 
+- [Sign2MINT](https://sign2mint.de/) is a lexicon of German Signed Language (DGS) focusing on natural science subjects.
+- [SignSuisse](https://signsuisse.sgb-fss.ch/) is a Swiss Signed Languages Lexicon that covers Swiss-German Sign Language (DSGS), 
+  French Sign Language (LSF), and Italian Sign Language (LIS). The lexicon includes approximately 4,500 LSF videos
+  with [SignWriting transcriptions in SignBank](https://www.signbank.org/signpuddle2.0/index.php?ui=4&sgn=49).
+
+(can also add around 2300 videos from the Vokabeltrainer)
+
 ## Poses
 
-Poses are collected using `collect_poses.py` and are available to download from [Google Cloud Storage](https://firebasestorage.googleapis.com/v0/b/sign-language-datasets/o/poses%2Fholistic%2Ftranscription.zip?alt=media).
+Poses are collected using `collect_poses.py` and are available to download from [Cloudflare Storage](https://sign-lanugage-datasets.sign-mt.cloud/poses/holistic/transcription.zip).
 
 It is recommended to pre-process the poses when using them for training. For example:
 ```python
