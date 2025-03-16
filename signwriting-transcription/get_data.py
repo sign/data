@@ -48,10 +48,11 @@ if __name__ == "__main__":
     cursor = database.cursor()
     with open('data.csv', 'w', encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow([c.name for c in cursor.description] + ["split"])
 
         print("Executing query")
         cursor.execute(QUERY)
+        writer.writerow([c.name for c in cursor.description] + ["split"])
+
         num_rows = cursor.rowcount
         for row in tqdm(cursor):
             # Normalize the SWU
